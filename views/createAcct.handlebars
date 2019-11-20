@@ -1,0 +1,77 @@
+<nav class="navbar navbar-light lighten-4">
+    <span class="navbar-brand">Voluntour</span>
+</nav>
+<div id="createAcct" class="container">
+    <form>
+        <div class="form-row">
+            <div class="col">
+                <label for="validationServer01">First name</label>
+                <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name"
+                    value="" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col mb-3">
+                <label for="validationServer02">Last name</label>
+                <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name"
+                    value="" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col mb-3">
+                <label for="validationServerUsername">Username</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                    </div>
+                    <input type="text" class="form-control is-invalid" id="validationServerUsername"
+                        placeholder="Username" aria-describedby="inputGroupPrepend3" required>
+                    <div class="invalid-feedback">
+                        Please choose a username.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label for="validationServer03">Phone Number</label>
+                <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="Phone Number"
+                    required>
+                <div class="invalid-feedback">
+                    Please provide a valid phone.
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col mb-3">
+                <label for="validationServer04">User Name</label>
+                <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="userName"
+                    required>
+                <div class="invalid-feedback">
+                    Please provide a valid user name.
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col mb-3">
+                <label for="validationServer05">Password</label>
+                <input type="text" class="form-control is-invalid" id="validationServer05" placeholder="password"
+                    required>
+                <div class="invalid-feedback">
+                    Please provide a valid password.
+                </div>
+            </div>
+        </div>
+        <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+            <label class="custom-control-label" for="defaultUnchecked">Admin?</label>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+    </form>
+</div>

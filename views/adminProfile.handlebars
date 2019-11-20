@@ -1,0 +1,175 @@
+<nav class="navbar navbar-light lighten-4">
+        <span class="navbar-brand">Voluntour</span>
+          <img src="/images/Image from iOS (2).jpg" width="60" height="70" class="d-inline-block align-top" alt="">
+    </nav>
+     {{!-- Volunteer Profile Page  --}}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-xl-9 mx-auto">
+                <div class="card card-signin flex-row my-5">
+                    <div class="card-img-left d-none d-md-flex">
+                    </div>
+                    <div class="card-body">
+                            <h5 class="card-title text-center">Admin Profile</h5>
+                            <br>
+                        <form class="form-signin">
+                            <div class="row">
+                                <div class="col">
+                                      {{!-- profile photo  --}}
+                                    <img src="https://mdbootstrap.com/img/Others/documentation/img%20(75)-mini.jpg"
+                                        alt="thumbnail" class="img-thumbnail z-depth-3 rounded float-left"
+                                        style="width: 200px">
+                                </div>
+                                <div class="col">
+                                      {{!-- Name and contact info (email & phone number) of volunteer  --}}
+                                    <div class="card" id="card1" style="max-width: 20rem;">
+                                        <div class="card-header">John Doe</div>
+                                        <div class="card-body text-info">
+                                            <div class="text-center">
+                                                <a href="" id="contact"class="btn" data-toggle="modal"
+                                                    data-target="#modalContactForm">Contact Info</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col">
+                                    {{!-- Talble that shows Names of volunteers/employees and provides --}}
+                                            {{!-- hours of volunteer time --}}
+                                    <table id="tablePreview" class="table table-hover table-borderless z-depth-2">
+                                        <!--Table head-->
+                                        <thead>
+                                            <tr>
+                                                <th>Volunteers:</th>
+                                                <th>Hours:</th>
+                                            </tr>
+                                        </thead>
+                                        {{!-- Table head --}}
+                                        {{!-- Table body --}}
+                                        <tbody>
+                                            <tr>
+                                                <td>Mark Humphrey</td>
+                                                <td>
+                                                 {{!-- Button trigger modal --}}
+                                                    <button type="button" id="totalHours" class="btn" data-toggle="modal"
+                                                        data-target="#modalChart">Total Hours</button>
+                                                    </td>
+                                            </tr>
+                                        </tbody>
+                                        {{!-- Table body --}}
+                                    </table>
+                                    {{!-- Table --}}
+                                </div>
+                                {{!-- Modal shows the Contact Info (email and phone number) for volunteer --}}
+                                <div class="modal fade z-depth-2" id="modalContactForm" tabindex="-1" role="dialog"
+                                    aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header text-center">
+                                                <h4 class="modal-title w-100 font-weight-bold">John Doe</h4>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="md-form mb-5">
+                                                <i class="fas fa-envelope prefix grey-text"></i>
+                                                <input type="email" id="form29" class="form-control validate">
+                                                <label data-error="wrong" data-success="right" for="form29">Your
+                                                    email</label>
+                                            </div>
+
+                                            <div class="md-form mb-5">
+                                                <i class="fas fa-tag prefix grey-text"></i>
+                                                <input type="tel" id="form32" class="form-control validate">
+                                                <label data-error="wrong" data-success="right" for="form32">Phone
+                                                    number</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                {{!-- Modal showing table data for Total number of hours volunteered --}}
+                            {{!-- (name of org, date, time and total for each org) --}}
+
+                             {{!-- Modal: modalChart  --}}
+                            <div class="modal fade" id="modalChart" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    {{!-- Header --}}
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="myModalLabel">Total Hours</h4>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                    {{!-- Body --}}
+                                    <div class="modal-body">
+
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Organization</th>
+                                                    <th>Date</th>
+                                                    <th>Time</th>
+                                                    <th>Total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Habitat for Humanity</td>
+                                                    <td>9/19/19</td>
+                                                    <td>00:00 - 00:00</td>
+                                                    <td>00:00</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                    {{!-- Footer --}}
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-primary z-depth-2"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         {{!-- Modal: modalChart  --}}
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+#totalHours{
+    background-color: #c48b9f;
+    font-family: "Caveat", cursive;
+    color: black;
+    margin: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: x-large
+}
+#contact{
+        background-color: #c48b9f;
+    font-family: "Caveat", cursive;
+    color: black;
+    margin: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: large
+}
+body{
+    color: black;
+    font-family: "Caveat",cursive;
+    font-size: x-large;
+}
+    </style>

@@ -1,0 +1,73 @@
+<nav class="navbar navbar-light lighten-4">
+    <span class="navbar-brand">Voluntour</span>
+</nav>
+
+<div class="container">
+<form action="/api/user/login" method="post">
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input id="username" type="text" placeholder="Enter Username" name="username" required> 
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+  
+      <input type="submit" id="submit" value="submit">
+      <label>
+        <br>
+        <br>
+        <input type="checkbox" checked="checked" id="checkbox" name="remember"> Remember Me
+      </label>
+    </div>
+  
+    <div class="container1">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+<style>
+  .container1{
+    background-color: white;
+    color: black;
+    font-family: "Caveat", cursive;
+    font-size: large;
+  }
+  b{
+    color: black;
+    font-family: "Caveat" cursive;
+  }
+.container{
+  text-align: center;
+  background-color: white;
+}
+  #submit {
+    background-color: #c48b9f;
+    font-family: "Caveat", cursive;
+    color: black;
+    margin: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: x-large
+  }
+  .cancelbtn{
+    background-color: #c48b9f;
+    font-family: "Caveat", cursive;
+    color: black;
+    margin: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .container{
+    margin-top: 40px;
+  }
+label{
+  color: black;
+  font-family: "Caveat", cursive;
+  font-size: x-large;
+  margin-right: 15px;
+}
+input{
+  height: 40px;
+}
+</style>

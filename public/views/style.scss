@@ -1,0 +1,91 @@
+@import './var';
+//INDEX PAGE ***************************************
+.list-group-item {
+    line-height: 2.5;
+}
+
+.navbar-brand {
+    font-size: 40px;
+    font-family: $caveat;
+}
+
+nav {
+    background-color: $darkPink;
+    a {
+        font-size: 20px;
+    }
+}
+
+div {
+    #volunteerHands {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: -webkit-fill-available;
+        -webkit-filter: opacity(0.5) grayscale(0.3);
+        filter: opacity(0.5) grayscale(0.3);
+        position: relative;
+        z-index: 0;
+    }
+    h1 {
+        position: absolute;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+        z-index: 1;
+        font-family: $caveat;
+        font-size: 50px;
+    }
+}
+
+div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    img {
+        display: inline-block;
+        padding: 5px;
+        width: 20%;
+        height: 20%;
+    }
+}
+
+h3 {
+    font-family: $caveat;
+    padding-left: 20px;
+}
+
+//INDEX PAGE ***************************************
+// USER PROFILE ************************************
+div {
+    .list-group-item {
+        display: flex;
+    }
+}
+
+div {
+    form {
+        padding: 10px;
+    }
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $secondaryGrey;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+}

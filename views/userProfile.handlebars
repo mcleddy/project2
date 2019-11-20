@@ -1,0 +1,77 @@
+<nav class="navbar navbar-light lighten-4">
+    <span class="navbar-brand">Voluntour</span>
+    <button href="Solved/public/js/cms.html">cms</button>
+</nav>
+{{!-- User/Volunteer Profile Page --}}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-10 col-xl-9 mx-auto">
+            <div class="card card-signin flex-row my-5">
+                <div class="card-img-left d-none d-md-flex">
+                    <div class="card" style="width: 18rem;">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Contact Info</li>
+                            <li class="list-group-item">email@email.com</li>
+                            <li class="list-group-item">555-555-5555</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body text-align-left">
+                    <p>My Organizations</p>
+                    <ul>
+                        <li class="dropdown">
+                            <select value="">
+                                {{#each data}}
+                                <option name="" id="">{{org}}</option>
+                                {{/each}}
+                            </select>
+                        </li>
+                    </ul>
+
+                </div>
+                <p>My Hours</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col">
+
+            <!--Table shows volunteer organizations and hours worked-->
+            <table id="tablePreview" class="table table-hover table-borderless z-depth-2">
+                <!--Table head-->
+                <thead>
+                    <tr>
+                        <th>Volunteer Organizations</th>
+                        <th>Hours</th>
+                    </tr>
+                </thead>
+                <!--Table head-->
+                <!--Table body-->
+                <tbody>
+                    {{#each data}}
+
+                    <tr>
+                        <td>{{org}}</td>
+                        <td>{{hours}}</td>
+                    </tr>
+
+                    {{/each}}
+
+
+                </tbody>
+                <!--Table body-->
+            </table>
+            <!--Table-->
+        </div>
+        {{!-- Modal: modalChart  --}}
+    </div>
+
+    </form>
+</div>

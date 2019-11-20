@@ -1,0 +1,62 @@
+body {
+    margin: 0 auto;
+  }
+  
+  .list-group-item {
+    line-height: 2.5;
+  }
+  
+  .navbar-brand {
+    font-size: 40px;
+    font-family: "Caveat", cursive;
+  }
+  
+  nav {
+    background-color: #c48b9f;
+  }
+  
+  nav a {
+    font-size: 20px;
+  }
+  
+  div #volunteerHands {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: -webkit-fill-available;
+    -webkit-filter: opacity(0.5) grayscale(0.3);
+    filter: opacity(0.5) grayscale(0.3);
+    position: relative;
+    z-index: 0;
+  }
+  
+  div h1 {
+    position: absolute;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    z-index: 1;
+    font-family: "Caveat", cursive;
+    font-size: 50px;
+  }
+  
+  div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  
+  div img {
+    display: inline-block;
+    padding: 5px;
+    width: 20%;
+    height: 20%;
+  }
+  
+  h3 {
+    font-family: "Caveat", cursive;
+    padding-left: 20px;
+  }
+  /*# sourceMappingURL=style.css.map */
