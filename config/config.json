@@ -11,7 +11,7 @@
     "username": "root",
     "password": "root",
     "database": "testdb",
-    "host": "localhost",
+    "host": "localhost", 
     "dialect": "mysql",
     "operatorsAliases": false
   },
