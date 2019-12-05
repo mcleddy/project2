@@ -1,8 +1,7 @@
-# project2
-# Project Name
+# VolunTour
 
-Voluntour
 
+Heroku depoyment:
 https://afternoon-thicket-88370.herokuapp.com/
 
 ## Purpose and Function
